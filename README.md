@@ -60,6 +60,10 @@ After running the script, open the provided URL in your browser to interact with
 Ask the agent:
 > "Stock analysis of Nvidia."
 
+![Alt Text](https://imgur.com/tqlbGdE.jpg)
+
+![Alt Text](https://imgur.com/7MM1alr.jpg)
+
 ---
 
 ## Project Structure
