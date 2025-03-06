@@ -1,4 +1,4 @@
-# AlphaAi
+# AlphaAi : View The Future
 
 An AI-powered stock analysis tool that provides **fundamental, technical, and news-based analysis** for informed trading decisions. Built using **Phidata, Groq, OpenAI, YFinance, and FastAPI**.
 
