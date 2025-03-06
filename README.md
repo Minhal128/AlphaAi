@@ -68,7 +68,7 @@ Ask the agent:
 
 ## Project Structure
 ```
-Financial-AI-Agent/
+AlphaAi/
 │── agents/
 │   ├── news_agent.py   # News search agent
 │   ├── technical_agent.py   # Technical analysis agent
