@@ -1,0 +1,9 @@
+phidata
+python-dotenv
+groq
+pycountry
+googlesearch-python
+yfinance
+fastapi
+uvicorn
+openai
