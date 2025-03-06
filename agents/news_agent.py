@@ -1,12 +1,18 @@
+import os
+from dotenv import load_dotenv
 from phi.agent import Agent
 from phi.model.groq import Groq
 from phi.tools.googlesearch import GoogleSearch
+
+# Load environment variables
+load_dotenv()
+groq_api_key = os.getenv("GROQ_API_KEY")
 
 def news_search_agent():
     """Google News Search Agent."""
     return Agent(
         name="News Search Agent",
-        model=Groq(id="llama3-groq-70b-8192-tool-use-preview"),
+        model=Groq(id="llama3-groq-70b-8192-tool-use-preview", api_key=groq_api_key),  # API key pass ki
         tools=[GoogleSearch()],
         description="You are a news agent that helps users find the latest news.",
         instructions=[

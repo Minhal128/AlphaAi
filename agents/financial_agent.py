@@ -1,11 +1,17 @@
+import os
+from dotenv import load_dotenv
 from phi.agent import Agent
 from phi.model.openai import OpenAIChat
+
+# Load environment variables
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 def financial_agent(news_search_agent, technical_analyzer_agent, fundamental_analyzer_agent):    
     return Agent(
         name="Financial Agent",
         team=[news_search_agent, technical_analyzer_agent, fundamental_analyzer_agent],
-        model=OpenAIChat(id="gpt-4o"),
+        model=OpenAIChat(id="gpt-4o", api_key=openai_api_key),  # API key pass ki
         instructions=["Create an investment report on the stock. Include:\n"
                 "Company Snapshot: Key facts and overview.\n"
                 "Financial Analysis: Top metrics and peer comparison.\n"
