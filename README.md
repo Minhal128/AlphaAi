@@ -14,7 +14,7 @@ An AI-powered stock analysis tool that provides **fundamental, technical, and ne
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/AlphaAi.git
+git clone https://github.com/Minhal128/AlphaAi.git
 cd AlphaAi
 ```
 
